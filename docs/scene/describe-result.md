@@ -36,11 +36,28 @@ Uncertainties - cannot determine from this photo:
 - Connector type and wire count.
 - Full extent of fan unit. SAM box covers grille only, not whole unit.
 
+## Addendum — crop-then-segment screw count, 2026-10-29 (pass)
+
+Whole-scene "screws" had hit the tray's corner magnets (lid-closure magnets,
+not screws). Fix: SAM `plastic tray` box `[179,464,630,826]` (concept `tray`
+returned nothing; `plastic tray` hit), cropped with 10 px padding, re-ran
+screw concepts on the crop:
+
+- `screw`: 8 boxes — 4 corner magnets (rejected, same as before) + 4
+  interior boxes, all overlay-verified on the loose screws:
+  `[308,564,332,580]`, `[342,563,358,587]`, `[388,589,414,602]`,
+  `[430,600,455,614]` (1280x960 space).
+- `metal screw`: only the 4 corners. `loose screw`: 0.
+
+Screw count is now box-confirmed: **4 of 4 expected**. Size/thread (M3)
+remains unconfirmed — dark-on-dark, no spec readable. Cable still has no
+SAM box.
+
 ## Reading for the line-item step
 
-2 of 7 items are box-confirmed (fan unit, screwdriver). 5 are
-human-review items: the model refused to confirm counts/specs it cannot
-see. A Quickerbooks line-item draft must propose lines only for confirmed
-items and flag the rest — never invent the 4×/M3/3-pin values from the
-inventory. If the Friday demo needs all-7 confirmed, the scene needs a
+6 of 7 items are box-confirmed (fan unit, screwdriver, 4 screws by
+count). Remaining unconfirmed: screw size/thread (M3) and the cable
+(pins/type). A Quickerbooks line-item draft must propose lines only for
+confirmed items and flag the rest — never invent the M3/3-pin specs from
+the inventory. If the Friday demo needs all-7 confirmed, that takes a
 closer second photo, not a forced read.

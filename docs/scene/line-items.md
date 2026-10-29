@@ -21,17 +21,19 @@ reviewer inputs, not model outputs.
    Duration: **TBD at review**. A photo is not proof of labor time.
 2. **DEMO-PART-FAN180 × 1** — intake-fan unit FOUND (SAM grille box
    `305,205,453,344` quoted in describe).
+3. **DEMO-PART-SCRM3 × 4** — screw COUNT box-confirmed by
+   crop-then-segment (4 interior boxes, overlay-verified; corner magnets
+   excluded). Size/thread: **verify M3 at review** — not readable
+   dark-on-dark. If the reviewer rejects M3, this line comes off.
 
 ## Review holds (NOT proposed as lines — uncertainties from describe)
 
-- **Screws**: tray found, count/size unconfirmed (no SAM box). Do not
-  propose `4× DEMO-PART-SCRM3` until a human confirms.
 - **Cable**: wire bundle visible, pin count unconfirmed (no SAM box). Do
   not propose `DEMO-PART-CBL3P` until a human confirms.
 
 ## Rule applied
 
-The draft shows the refusal: 2 lines proposed, 2 holds flagged. At no
-point are the locked inventory counts (4 / M3 / 3-pin) copied into lines
-the models could not confirm. A closer second photo could clear the
-holds; a forced read never does.
+The draft shows the refusal: 3 lines proposed, 1 held. The locked
+inventory counts enter lines only where boxes confirm them (4 screws by
+count); the M3/3-pin specs never enter unconfirmed. A closer second photo
+could clear the last hold; a forced read never does.
