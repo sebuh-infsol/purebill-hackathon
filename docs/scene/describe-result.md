@@ -50,14 +50,26 @@ screw concepts on the crop:
 - `metal screw`: only the 4 corners. `loose screw`: 0.
 
 Screw count is now box-confirmed: **4 of 4 expected**. Size/thread (M3)
-remains unconfirmed — dark-on-dark, no spec readable. Cable still has no
-SAM box.
+remains unconfirmed — dark-on-dark, no spec readable.
+
+## Addendum 2 — cable lead via fan-unit crop, 2026-10-29 (pass)
+
+Inventory corrected same day: no beside-fan coil exists; the cable is a
+short (~0.5 in) lead exiting the bottom-left of the fan unit. SAM on the
+fan-unit crop (`black box` box `[221,179,825,477]` + 10 px padding):
+
+- `wire`: `[244,376,289,407]` — overlay-verified on the red/black lead.
+- `connector` and `white connector`: `[231,397,256,418]` — overlay-verified
+  on the white connector body. `cable`: 0.
+
+Cable lead is box-confirmed (1 lead, connector visible). Pin count (3-pin)
+remains unconfirmed — connector too small to resolve pins.
 
 ## Reading for the line-item step
 
-6 of 7 items are box-confirmed (fan unit, screwdriver, 4 screws by
-count). Remaining unconfirmed: screw size/thread (M3) and the cable
-(pins/type). A Quickerbooks line-item draft must propose lines only for
-confirmed items and flag the rest — never invent the M3/3-pin specs from
-the inventory. If the Friday demo needs all-7 confirmed, that takes a
-closer second photo, not a forced read.
+All 7 items are box-confirmed by count/location (fan unit, screwdriver,
+4 screws, 1 cable lead). Remaining unconfirmed specs: screw size/thread
+(M3), cable pin count (3-pin). A Quickerbooks line-item draft must propose
+lines only for confirmed items and flag specs — never invent the M3/3-pin
+specs from the inventory. If the Friday demo needs spec-level certainty,
+that takes a closer second photo, not a forced read.

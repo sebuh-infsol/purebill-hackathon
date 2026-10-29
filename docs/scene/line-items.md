@@ -26,14 +26,19 @@ reviewer inputs, not model outputs.
    excluded). Size/thread: **verify M3 at review** — not readable
    dark-on-dark. If the reviewer rejects M3, this line comes off.
 
-## Review holds (NOT proposed as lines — uncertainties from describe)
+4. **DEMO-PART-CBL3P × 1** — cable lead FOUND via fan-unit crop
+   (`wire` box `244,376,289,407` on the lead, `connector` box
+   `231,397,256,418` on the white body, both overlay-verified). Pin count:
+   **verify 3-pin at review** — connector too small to resolve pins. If
+   the reviewer rejects 3-pin, this line comes off.
 
-- **Cable**: wire bundle visible, pin count unconfirmed (no SAM box). Do
-  not propose `DEMO-PART-CBL3P` until a human confirms.
+## Review holds
+
+None. All 7 items are box-confirmed by count/location. Open review flags:
+labor duration, M3 thread, 3-pin count.
 
 ## Rule applied
 
-The draft shows the refusal: 3 lines proposed, 1 held. The locked
-inventory counts enter lines only where boxes confirm them (4 screws by
-count); the M3/3-pin specs never enter unconfirmed. A closer second photo
-could clear the last hold; a forced read never does.
+The draft shows the refusal where it belongs: 4 lines proposed, 0 held,
+3 spec flags. The locked inventory counts enter lines only where boxes
+confirm them; the M3/3-pin/duration specs never enter unconfirmed.

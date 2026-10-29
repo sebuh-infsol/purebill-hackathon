@@ -21,7 +21,7 @@ White desk, parts laid out in a single row, left to right. Nothing else in frame
 | 1 | 120 mm intake fan (front, label up) | 1 |
 | 2 | M3 mounting screws in tray (loose, countable) | 4 |
 | 3 | Phillips screwdriver (handle left, tip right) | 1 |
-| 4 | Fan power cable with 3-pin connector (coiled beside fan) | 1 |
+| 4 | Fan power cable with 3-pin connector (short ~0.5 in cable exiting bottom-left of fan unit) | 1 |
 
 Total countable items: **7** (1 + 4 + 1 + 1).
 
@@ -37,6 +37,14 @@ Total countable items: **7** (1 + 4 + 1 + 1).
   note `Replace intake fan` — all exact, no deviations
 - Framing check Oct 29: same 7 scene items (tray with 4 screws, fan unit
   with cable connector, screwdriver), no edge clutter.
+
+### Inventory correction (Oct 29, post-photo)
+
+- Item 4 was written pre-run as "coiled beside fan". The actual scene has
+  no beside-fan coil: the cable is a short (~0.5 in) lead exiting the
+  bottom-left of the fan unit (white connector + colored wires, visible in
+  all three captures). Count unchanged (1). Table corrected above; the
+  original wording is preserved in git history.
 
 ### Evidence history (all attempts preserved, none deleted)
 
