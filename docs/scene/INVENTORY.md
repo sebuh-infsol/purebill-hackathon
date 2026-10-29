@@ -25,28 +25,30 @@ White desk, parts laid out in a single row, left to right. Nothing else in frame
 
 Total countable items: **7** (1 + 4 + 1 + 1).
 
-## Photo
+## Photo (locked demo capture)
 
-- [x] Photo taken of the scene above (original bytes preserved office-side)
-- Request ID (actual, as captured): `3ecf896d-a263-4a4e-9fef-a9d66c07bc30`
-  (planned `demo-hb1042-intake-fan` was not used at capture time; this UUID is
-  the frozen record — no re-upload under a second ID)
-- Photo SHA-256: `c4d186e7ca862afe2a2bfb89d9bc43fa2213181c2b09623ea2d7902c7d59e1f7`
+- Request ID: `7d172bdc-5414-47e9-b4af-c45006f27c43`
+- Photo SHA-256: `80fb319640915e7ca326483e79a53070fa5c1f36ef3168041ec5ca5d0b5a73b4`
   (verified readback from office disk Oct 29; matches sidecar receipt)
-- Byte count: `73022` (matches sidecar receipt)
-- Sidecar: `3ecf896d-a263-4a4e-9fef-a9d66c07bc30.json`, captured
-  `2026-10-29T21:30:09Z`
+- Byte count: `67216` (matches sidecar receipt)
+- Sidecar: `7d172bdc-5414-47e9-b4af-c45006f27c43.json`, captured
+  `2026-10-29T21:33:36Z`
+- Sidecar job fields: customer `Harbor Dentel Studio`, workOrder `HB-1042`,
+  note `Replace intake fan`
+- Framing check Oct 29: same 7 scene items, no edge clutter this time
+  (tray with 4 screws, fan unit with cable connector, screwdriver).
+
+### Evidence history (all attempts preserved, none deleted)
+
+- `3ecf896d-a263-4a4e-9fef-a9d66c07bc30` (73,022 bytes, job fields null):
+  **superseded** by re-capture below. Kept on disk; not demo evidence.
+- `7d172bdc-5414-47e9-b4af-c45006f27c43`: **the locked demo photo.**
 
 ### Deviations from plan (recorded honestly, scene counts unaffected)
 
-- Job fields at capture are `null` (customer/workOrder/note not filled on the
-  phone). The HB-1042 job binding lives in this repo (section above), not in
-  the capture sidecar. Decide before the demo: keep repo-side binding, or
-  re-capture with fields filled.
-- Two unplanned items at frame edges: small plastic bag (top-right) and an
-  unidentified object sliver (bottom-left). Countable scene items are still
-  exactly the 7 above; a passing describe must not count edge clutter, and
-  must list anything ambiguous as uncertainty.
+- Operator typo frozen in the sidecar: customer reads `Harbor Dentel
+  Studio`, not `Harbor Dental Studio`. The record is what it is — the demo
+  quotes the actual value and notes the intended spelling; no silent fix.
 
 A passing demo describe must report counts matching the table above
 (1 fan, 4 screws, 1 screwdriver, 1 cable) or list the mismatch as an
