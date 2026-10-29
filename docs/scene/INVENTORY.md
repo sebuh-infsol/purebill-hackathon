@@ -27,9 +27,26 @@ Total countable items: **7** (1 + 4 + 1 + 1).
 
 ## Photo
 
-- [ ] Photo taken of the scene above (phone or glasses; original bytes preserved)
-- [ ] Photo SHA-256 recorded here after capture: `pending`
-- [ ] Photo byte count recorded here after capture: `pending`
+- [x] Photo taken of the scene above (original bytes preserved office-side)
+- Request ID (actual, as captured): `3ecf896d-a263-4a4e-9fef-a9d66c07bc30`
+  (planned `demo-hb1042-intake-fan` was not used at capture time; this UUID is
+  the frozen record — no re-upload under a second ID)
+- Photo SHA-256: `c4d186e7ca862afe2a2bfb89d9bc43fa2213181c2b09623ea2d7902c7d59e1f7`
+  (verified readback from office disk Oct 29; matches sidecar receipt)
+- Byte count: `73022` (matches sidecar receipt)
+- Sidecar: `3ecf896d-a263-4a4e-9fef-a9d66c07bc30.json`, captured
+  `2026-10-29T21:30:09Z`
+
+### Deviations from plan (recorded honestly, scene counts unaffected)
+
+- Job fields at capture are `null` (customer/workOrder/note not filled on the
+  phone). The HB-1042 job binding lives in this repo (section above), not in
+  the capture sidecar. Decide before the demo: keep repo-side binding, or
+  re-capture with fields filled.
+- Two unplanned items at frame edges: small plastic bag (top-right) and an
+  unidentified object sliver (bottom-left). Countable scene items are still
+  exactly the 7 above; a passing describe must not count edge clutter, and
+  must list anything ambiguous as uncertainty.
 
 A passing demo describe must report counts matching the table above
 (1 fan, 4 screws, 1 screwdriver, 1 cable) or list the mismatch as an
