@@ -22,6 +22,9 @@ Production untouched (production entry still read-only; no production calls).
 
 - Rendered invoice PDF (downloaded from the sandbox browser view):
   [`invoice-1038.pdf`](invoice-1038.pdf) — sandbox test data only.
+- Browser screenshot of posted invoice 1038 (sandbox):
+  [`invoice-1038-screenshot.png`](invoice-1038-screenshot.png) — 4 lines,
+  quantities 1/1/4/1, all Nontaxable, matching the locked inventory.
 
 ## Demo line mapping
 
