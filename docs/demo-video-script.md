@@ -1,20 +1,28 @@
 # 3-minute demo video — shot script (new work)
 
-Total: ~180 seconds. Film the screen + the staged scene; read the bold
-lines verbatim. Every claim on screen maps to a repo file.
+Total: ~180 seconds. Sony A7IV on tripod + shotgun mic, locked exposure,
+levels peaking -12dB, 10s room tone. Read bold lines verbatim. Every claim
+maps to a repo file.
 
-## 0:00–0:15 — Hook (repo README on screen)
+## 0:00–0:05 — Title card (workspace pan, dimmed + title)
+
+One slow left-to-right pan: start on the white folding table (the same
+table the analysis photos were taken on), end at the monitor desk. In
+CapCut: dim ~40%, title over it — "PureBill — field photo to invoice
+lines". Hold 5 seconds, hard cut. No narration; let the room tone breathe.
+
+## 0:05–0:18 — Hook (talking head)
 
 **"A field tech photographs a repair. Our pipeline counts what's in the
 photo, drafts the invoice for human review, and proves every step. Seven
 items boxed, four lines proposed, three specs honestly refused."**
 
-## 0:15–0:35 — The locked scene (photo + INVENTORY.md)
+## 0:18–0:35 — The locked scene (photo + INVENTORY.md)
 
-Show the staged table. **"Before any photo existed, we locked this
-inventory: one fan, four screws, one screwdriver, one cable — seven items
-for job HB-1042."** Cut to `INVENTORY.md` and the capture receipt: hash,
-68,770 bytes.
+Cut to the locked photo fullscreen. **"Before any photo existed, we locked
+this inventory: one fan, four screws, one screwdriver, one cable — seven
+items for job HB-1042."** Cut to `INVENTORY.md` and the capture receipt:
+hash, 68,770 bytes.
 
 ## 0:35–1:15 — SAM boxes (infographic fullscreen)
 
@@ -49,8 +57,14 @@ repo, hashes and all."**
 Repo URL on screen. **"PureBill — the photo is evidence, the review is the
 product."**
 
-## Filming notes
+## Filming notes (small cubicle)
 
-- 1126×854 screen captures are already in-repo; re-film or reuse.
+- Shoot the pan with the room as-is: folding table left, monitor desk
+  right. Tidy cables out of the pan path only; lived-in reads as real.
+- Overhead office light is enough; kill any flickering source before rolling.
+- Talking head: sit at the black desk facing the Sony, stacked monitors to
+  your side (not behind — avoids exposure hunting and unreadable text).
+- 1126×854 screen captures are already in-repo; drop the files in, don't
+  re-film screens.
 - Keep the infographic fullscreen ≥20 seconds — it's the technical core.
-- If a take runs long, cut the 0:15 scene pan, never the magnet story.
+- If a take runs long, trim talking-head pauses first, never the magnet story.
