@@ -38,6 +38,7 @@ review, and posts a sandbox invoice — with every step evidenced:
 | `docs/spark-smoke-test.md` | Contributor-model endpoint/format proof |
 | `docs/demo-draft.md` | Friday runbook: chain, Q&A, what to say when asked |
 | `docs/architecture.md` | Hermes-agent × Muse Spark split and handoff |
+| `docs/agent-handoff-infographic.jpg` | Handoff diagram + why-not-a-plugin |
 
 ## Honesty notes (please hold us to these)
 
