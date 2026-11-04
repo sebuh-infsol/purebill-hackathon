@@ -39,6 +39,7 @@ review, and posts a sandbox invoice — with every step evidenced:
 | `docs/demo-draft.md` | Friday runbook: chain, Q&A, what to say when asked |
 | `docs/architecture.md` | Hermes-agent × Muse Spark split and handoff |
 | `docs/agent-handoff-infographic.jpg` | Handoff diagram + why-not-a-plugin |
+| `scripts/describe_scene.py` | Reproduce the SAM + describe pass (needs your own keys) |
 
 ## Honesty notes (please hold us to these)
 
@@ -53,6 +54,38 @@ review, and posts a sandbox invoice — with every step evidenced:
   production was never touched and its connection remains read-only.
 - Failing paths are shown, not hidden: the magnet error, the null-fields
   capture, the typo'd customer, the refused invoice-draft substitution.
+
+## Architecture — which Meta models, where each runs
+
+- **SAM 3.1** (hosted Meta Responses API, `https://api.meta.ai/v1/responses`):
+  runs at Meta; called from any machine with an API key. Takes the scene
+  JPEG + a text concept, returns boxes + one-bit masks. Used whole-scene
+  first, then on tray/unit crops for small objects.
+- **`muse-spark-1.3-contributor`** (Meta, Contributor mode): invoked here via
+  `muse exec --model muse-spark-1.3-contributor --image <jpeg>` with SAM
+  boxes quoted in prompt text (no special schema). Runs wherever the Muse
+  CLI runs with provider credentials; inference is hosted.
+- **QuickBooks**: local MCP server (`intuit/quickbooks-online-mcp-server`,
+  stdio) on the office box; production entry read-only, sandbox entry
+  read/write. Held by the Hermes-agent, never by the model session.
+
+## Run it yourself (judges)
+
+Prereqs: Python 3 stdlib only, `muse` CLI, a Meta API key, your own photo.
+
+```sh
+# 1. SAM boxes for any concept on your photo (prints boxes as JSON):
+META_API_KEY=<yours> python3 scripts/describe_scene.py photo.jpg "loose screw"
+
+# 2. Contributor describe with those boxes (same format as the demo):
+muse exec --model muse-spark-1.3-contributor --reasoning-effort low \
+  --image photo.jpg "SAM 3.1 returned boxes [...] in WxH space. ..."
+```
+
+QuickBooks side: install the MCP server above, complete Intuit's sandbox
+OAuth (localhost redirect works for sandbox), and call `get_company_info`
+first — exactly the path in `docs/scene/qb-sandbox.md`. Production stays
+read-only by configuration.
 
 ## Verify it yourself
 
