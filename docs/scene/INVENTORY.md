@@ -33,6 +33,8 @@ Total countable items: **7** (1 + 4 + 1 + 1).
 - Byte count: `68770` (matches sidecar receipt)
 - Sidecar: `6136224d-2355-455a-a72b-10dfc9644d28.json`, captured
   `2026-10-29T21:35:17Z`
+- Photo in repo (staged fictional scene, consented demo evidence):
+  [`scene-photo-6136224d.jpg`](scene-photo-6136224d.jpg)
 - Sidecar job fields: customer `Harbor Dental Studio`, workOrder `HB-1042`,
   note `Replace intake fan` — all exact, no deviations
 - Framing check Oct 29: same 7 scene items (tray with 4 screws, fan unit
