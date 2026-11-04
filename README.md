@@ -72,20 +72,30 @@ review, and posts a sandbox invoice — with every step evidenced:
 ## Run it yourself (judges)
 
 Prereqs: Python 3 stdlib only, `muse` CLI, a Meta API key, your own photo.
+No QuickBooks connection needed for this path.
 
 ```sh
+cp .env.example .env   # put your key in .env (gitignored, never committed)
 # 1. SAM boxes for any concept on your photo (prints boxes as JSON):
-META_API_KEY=<yours> python3 scripts/describe_scene.py photo.jpg "loose screw"
+python3 scripts/describe_scene.py photo.jpg "loose screw"
+# -> {"concept": "loose screw", "size": [1280, 960],
+#     "boxes": [[308, 564, 332, 580], ...]}
+# Overlay-verify every box before trusting it (see the magnet story in
+# docs/scene/describe-result.md).
 
 # 2. Contributor describe with those boxes (same format as the demo):
 muse exec --model muse-spark-1.3-contributor --reasoning-effort low \
-  --image photo.jpg "SAM 3.1 returned boxes [...] in WxH space. ..."
+  --image photo.jpg \
+  "SAM 3.1 returned boxes x1=308 y1=564 x2=332 y2=580 in 1280x960 space. \
+  For each expected item state FOUND or NOT FOUND with its location, \
+  quote the box coordinates where one exists, and list the rest as uncertainties."
 ```
 
-QuickBooks side: install the MCP server above, complete Intuit's sandbox
-OAuth (localhost redirect works for sandbox), and call `get_company_info`
-first — exactly the path in `docs/scene/qb-sandbox.md`. Production stays
-read-only by configuration.
+QuickBooks is recorded evidence, not part of this path: `docs/scene/qb-sandbox.md`,
+invoice 1038 PDF + browser screenshot, writes log. (Optional appendix: install
+the MCP server above, complete Intuit's sandbox OAuth — localhost redirect
+works for sandbox — and call `get_company_info`. Production stays read-only
+by configuration and was never touched.)
 
 ## Verify it yourself
 

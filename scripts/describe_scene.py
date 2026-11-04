@@ -2,7 +2,9 @@
 """Reproduce the demo's SAM pass on any photo. Stdlib only.
 
 Usage:
-    META_API_KEY=<yours> python3 scripts/describe_scene.py photo.jpg "loose screw"
+    cp .env.example .env   # then put your key in .env (never committed)
+    python3 scripts/describe_scene.py photo.jpg "loose screw"
+    # ...or META_API_KEY=<yours> python3 scripts/describe_scene.py photo.jpg "loose screw"
 
 Prints JSON: {"concept", "size": [w, h], "boxes": [[x1,y1,x2,y2], ...]}.
 Boxes are raw SAM output -- overlay-verify before trusting them, exactly as
@@ -44,10 +46,23 @@ def jpeg_size(path):
     raise ValueError("no SOF marker found")
 
 
+def load_dotenv():
+    try:
+        with open(".env") as f:
+            for line in f:
+                line = line.strip()
+                if line and not line.startswith("#") and "=" in line:
+                    k, v = line.split("=", 1)
+                    os.environ.setdefault(k.strip(), v.strip())
+    except OSError:
+        pass
+
+
 def main():
     if len(sys.argv) != 3:
         sys.exit("usage: describe_scene.py photo.jpg \"concept\"")
     photo, concept = sys.argv[1], sys.argv[2]
+    load_dotenv()
     key = os.environ.get("META_API_KEY", "")
     if not key or not all(33 <= ord(c) <= 126 for c in key):
         sys.exit("set META_API_KEY to your Meta API key")

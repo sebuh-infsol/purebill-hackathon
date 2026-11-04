@@ -9,7 +9,8 @@ a box, or a named uncertainty. Nothing is asserted without one.
 A field tech photographs a staged repair scene; the office pipeline
 counts what's in the photo against a pre-locked inventory and drafts
 invoice lines for human review — confirming 7 of 7 items by location,
-refusing the 3 specs it cannot see, and never writing to accounting.
+refusing the 3 specs it cannot see, and posting only to the sandbox —
+production untouched.
 
 ## 1. The locked scene
 
@@ -62,8 +63,9 @@ wordings on record: `tray`, `loose screw`, `metal screw` (corners only),
   (count boxed, M3 flagged), cable ×1 (lead boxed, 3-pin flagged).
 - 0 held, 3 spec flags: duration, M3, 3-pin. The draft's honesty feature
   is the flags, not the lines.
-- **No accounting write in the demo.** Write tests go to a sandbox
-  company first; production needs separate approval.
+- **Sandbox invoice posted (145 / Doc 1038, $41.00), production untouched.**
+  The write venue was always sandbox-first per the safety gates; the posted
+  invoice, PDF, and browser screenshot are in `docs/scene/`.
 
 ## 6. What to say when asked
 

@@ -1,6 +1,7 @@
 # Line-item proposal — HB-1042 demo draft, 2026-10-29 (new work)
 
-Status: **proposal only, review-gated. No accounting write.**
+Status: **proposed Nov 3, posted to sandbox Nov 4 as invoice 145 / Doc 1038
+($41.00) with explicit owner approval. Production never touched.**
 Source: `describe-result.md` (2 of 7 items box-confirmed, 5 uncertain).
 
 ## Demo catalog (defined today, demo-only — not a real price list)
