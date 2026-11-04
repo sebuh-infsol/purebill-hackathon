@@ -4,6 +4,8 @@ Solo hackathon submission. Everything in this repo was built **Oct 29 – Nov 4,
 2026** (window: Oct 26 – Nov 4; deadline Wed Nov 4, 9pm ET). Nothing is
 backdated; git history shows the work landing day by day.
 
+**Demo video (2:12):** https://www.youtube.com/watch?v=nSjl98j_EkQ
+
 ## The demo in 60 seconds
 
 A technician photographs a staged repair scene. The pipeline counts what's
