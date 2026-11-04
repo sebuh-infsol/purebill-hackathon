@@ -13,9 +13,10 @@ Production untouched (production entry still read-only; no production calls).
 
 - Customer `Harbor Dental Studio` → ID **58** (demo Test Customer, HB-1042).
 - Items created: fan unit **19**, M3 screw **20**, cable **21**, labor **22**.
-- Invoice: **held, not created.** The sandbox MCP create path posts (no
-  draft-status option), and per repo rules an unsent invoice is not assumed
-  non-posting — so no invoice was written without explicit approval.
+- Invoice **145**, DocNumber **1038**, TotalAmt **41.00**, customer 58,
+  lines: labor 22 ×1, fan 19 ×1, screws 20 ×4, cable 21 ×1.
+  Posted (the QBO v3 API cannot create UI drafts), unsent, unpaid —
+  created with explicit owner approval Nov 4. PrivateNote: HB-1042 demo.
 
 ## Demo line mapping
 
