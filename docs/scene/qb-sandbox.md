@@ -18,6 +18,11 @@ Production untouched (production entry still read-only; no production calls).
   Posted (the QBO v3 API cannot create UI drafts), unsent, unpaid —
   created with explicit owner approval Nov 4. PrivateNote: HB-1042 demo.
 
+## Proof
+
+- Rendered invoice PDF (downloaded from the sandbox browser view):
+  [`invoice-1038.pdf`](invoice-1038.pdf) — sandbox test data only.
+
 ## Demo line mapping
 
 `docs/scene/line-items.md` lines 1–4 map to sandbox items 22/19/20/21.
